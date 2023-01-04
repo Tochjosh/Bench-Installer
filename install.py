@@ -97,7 +97,7 @@ def check_distribution_compatibility():
 def get_distribution_info():
 	# return distribution name and major version
 	if platform.system() == "Linux":
-		info = platform.free_desktop_os_release()
+		info = platform.freedesktop_os_release()
 		name = info['NAME']
 		dist = info['VERSION']
 		# current_dist = platform.dist()
