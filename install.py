@@ -101,7 +101,7 @@ def get_distribution_info():
 		name = info['NAME']
 		dist = info['VERSION']
 		# current_dist = platform.dist()
-		return name.lower(), dist
+		return name.lower(), dist.split('.')[0]
 
 	elif platform.system() == "Darwin":
 		current_dist = platform.mac_ver()
