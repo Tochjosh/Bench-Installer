@@ -78,7 +78,7 @@ def check_distribution_compatibility():
 	dist_name, dist_version = get_distribution_info()
 	supported_dists = {
 		'macos': [10.9, 10.10, 10.11, 10.12],
-		'ubuntu': [14, 15, 16, 18, 19],
+		'ubuntu': [14, 15, 16, 18, 19, 22],
 		'debian': [8, 9],
 		'centos': [7]
 	}
